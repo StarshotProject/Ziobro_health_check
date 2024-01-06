@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czy Ziobro już zdechł?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Czy Ziobro już zdechł?</h1>
+    
+    <button onclick="sprawdz()">Sprawdź</button>
+
+    <div id="wynik"></div>
+
+    <script>
+        function sprawdz() {
+            var wynikDiv = document.getElementById("wynik");
+            wynikDiv.innerHTML = '<img src="https://placekitten.com/200/200" alt="Smutna buzia"><p>Niestety, nie</p>';
+        }
+    </script>
+
+</body>
+</html>
